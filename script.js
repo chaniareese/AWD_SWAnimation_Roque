@@ -51,7 +51,6 @@ circles.forEach((circle, index) => {
   circle.addEventListener("mouseout", () => {
     circle.classList.remove(circle.getAttribute("color"));
 
-    // Add the following lines for a gradual transition to linear gradient
     body.style.transition = "background-image 0.5s ease-in-out";
     body.style.backgroundImage = "linear-gradient(#d1d1d1, #242424)";
 
